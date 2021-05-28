@@ -1,184 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 *{
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 	font-family: 'Poppins', sans-serif;
-
 }
-.contact
-{
+.contactsection{ /*this section for whole contactsection class*/
 	position: relative;
 	min-height: 100vh;
-	padding: 50px 100px;
+	padding: 60px 110px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+	background: url(brick.jpg);
 	background-size: cover;
-	background-color: #2B3856;
 }
-.contact .content{
-
-	max-width: 850px;
+.contactsection .content{
+	max-width: 900px;
 	text-align: center;
 }
-
-.contact .content h2
-{
-
+.contactsection .content h2{
 	font-size: 40px;
-	font-weight: 550;
-	color: #fff;
+	font-weight: 600;
+	color: #000080;
 
 }
-
-.contact  .content p
-{
-
-	font-weight: 300;
-	color: #fff;
+.contactsection .content p{
+	font-weight: 450;
+	color: #000080;
 }
-.contactcontainer
-{
+.container{
 	width: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-top: 25px;
-
+	margin-top: 20px;
 }
-
-.contactcontainer .contactinfo
-{
+.container .contactinfo{
 	width: 50%;
 	display: flex;
 	flex-direction: column;
 }
-
-.contactcontainer .contactinfo .contactbox
-{
-
+.container .contactinfo .contactbox{
 	position: relative;
-	padding: 24px 0;
+	padding: 25px 0;
 	display: flex;
 }
 
-/*.contactcontainer .contactinfo .contactbox .icon 
-{
-
-	min-width: 65px;
-	height: 65px;
+.container .contactinfo .contactbox .text{
 	display: flex;
-	background: #fff;;
-	justify-content: center;
-	align-items: center;
-	border-radius: 45%;
-	font-size: 25px;
-
-}
-*/
-.contactcontainer .contactinfo .contactbox .text
-{
-
-	display: flex;
-	margin-left: 24px;
-	font-size: 18px;
-	color: #fff;
+	margin-left: 20px;
+	font-size: 15px;
+	color: #151B54;
 	flex-direction: column;
-	font-weight: 290;
-
+	font-weight: 320;
+}
+.container .contactinfo .contactbox .text h3{
+	font-weight: 600;
+	color: #6960EC;
 
 }
-.contactcontainer .contactinfo .contactbox .text h3
-{
-	font-weight: 500;
-	color: #00bcd4;
+.contactform{
+	width: 60%;
+	padding: 40px;
+	background-image: url(form.jpg);
+	border-radius: 10px;
+}
+.contactform h2{
+	font-size: 30px;
+	color: #fff;
+	font-weight: 600;
 }
 
-.contactform
-{
-	width: 45%;
-	padding: 45px;
-	background: #E0FFFF;
-	border-radius: 20px;
-
-}
-
-.contactform h2
-{
-	font-size: 34px;
-	color: #E0FFFF;
-	font-weight: 500;
-
-}
-.contactform .inputbox
-{
-	position: relative;
+.contactform .inputbox{
 	width: 100%;
+	position: relative;
 	margin-top: 12px;
-
 }
-.contactform .inputbox input, 
+.contactform .inputbox input,
 .contactform .inputbox textarea
 {
 	width: 100%;
-	padding: 6px 0;
-	font-size: 14px;
-	margin: 10px 0;
+	padding: 7px 0;
+	font-size: 15px;
+	margin-top: 12px 0;
 	border: none;
-	border-bottom: 2px solid #333;
+	border-bottom: 3px solid black;
 	outline: none;
 	resize: none;
 }
 
-.contactform .inputbox span
-{
+
+.contactform .inputbox span{
 	position: absolute;
 	left: 0;
-	padding: 6px 0;
+	padding: 7px 0;
 	font-size: 15px;
-	margin: 10px 0;
+	margin-top: 12px 0;
 	pointer-events: none;
 	transition: 0.5s;
-	color: #666;
+	color: #000080;
 }
-
-.contactform .inputbox  input:focus ~ span,
-.contactform .inputbox  input:valid ~ span,
-.contactform .inputbox  textarea:focus ~ span,
-.contactform .inputbox  textarea:valid ~ span
+.contactform .inputbox input:focus ~ span,
+.contactform .inputbox input:valid ~ span
+.contactform .inputbox textarea:focus ~ span,
+.contactform .inputbox textarea:valid ~ span
 {
-	color: #6495ED;
-	font-size: 13px;
-	transform: translateY(-20px);
+	color: green;
+	font-size: 14px;
+	transform: translateY(-22px);
 }
 .contactform .inputbox input[type="submit"]
 {
 	width: 100px;
-	background: #00bcd4;
+	background:#0000A0;
 	color: #fff;
-	border: none;
 	cursor: pointer;
+	border: none;
 	padding: 12px;
-	font-size: 17px;
+	font-size: 16px;
+	border-radius: 5px;
 }
 
-@media (max-width: 990px)
+@media (max-width: 1000px)
 {
-	.contact
-	{
-		padding: 50px;
+	.contactsection{
+		padding: 55px;
 	}
-	.contactcontainer
-	{
+	.container{
 		flex-direction: column;
 	}
-	.contactcontainer .contactinfo
-	{
-		margin-bottom: 45px;
+	.container .contactinfo{
+		margin-bottom: 42px;
 	}
-	.contactcontainer .contactinfo
-	{
+	.container .contactinfo
+	.contactform{
 		width: 100%;
 	}
 }
