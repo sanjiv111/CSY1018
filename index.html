@@ -1,56 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF=8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title> Welcome! to Sanjiv Tamang Website. </title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width", initial scale="1.0">
+	<title>Welcome! to Sanjiv Tamang Website.</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" type="text/css" href="navigation.css">
 </head>
-
 <body>
-	<div id="main">
-		<nav>
-			<img src="logo.png" width="250" height="80">
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="#">CV</a></li>
-				<li><a href="#">Sitereport</a></li>
-				<li><a href="contact.html">Contact</a></li>
-			</ul>
-		</nav>
-	</div>
-	<!--Top Section-->
-	<section id="top">
-		<div class="top_container">
-			<div>
-				<h1> NAMASTE!<span></span></h1>
-				<h1> My Name is<span></span> </h1>
-				<h1> Sanjiv<span></span></h1>
+	<!--Navigation Start section -->
+	<section id="navigation">
+		<div class="nav_icon">
+			<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+  			<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4 6h16M4 12h16M4 18h16" />
+			</svg><!--Navigation icon imported from heroicon site-->
 
-				<a href="#" type="button" class="cta"><b>My Portfolio</b></a>
+		</div>
+	</section>
+	<section id="nav_content">
+		<div class="close_button">
+			<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+  			<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
+			</svg><!--close button icon imported from heroicon site-->
+		</div>
+		<div class="wrapper">
+				<nav>
+					<ul>
+						<li><a data-text="Home"href="#">Home</a></li>
+						<li><a data-text="About"href="#">About</a></li>
+						<li><a data-text="My Portfolio"href="#">My Portfolio</a></li>
+						<li><a data-text="Sitereport"href="#">Sitereport</a></li>
+						<li><a data-text="Contact"href="#">Contact</a></li>
+					</ul>
+				</nav>
 			</div>
-			
 		</div>
 
 	</section>
 
 
+	<!--Navigation End section -->
 
-	
+<!--Start of Hero Section or main homepage layout-->
+	<section id="homepage_hero">
+		<div class="container">
+			<div class="left"> <!--here this left division is for information-->
+				<p class="subheading">I am SANJIV</p>
+				<h2 class="heading">
+					<div class="wrapper"><span>HELLO!</span></div>
+					<div class="wrapper"><span>EVERYONE</span></div>
+					<div class="wrapper"><span>NAMASTE</span></div>
 
-	
-	
+				</h2>
+				<p class="description">I am originally from Dolakha,Nepal.Currently, I am stuyding in NAMI College.</p>
+				<div class="button">
+					<a href="#" class="primary_button">My Portfolio </a>
+				</div>
+			</div>
+			<div class="right">
+				<img src="profilephoto.png" alt="image">
+			</div><!--here this right division is for the image portion-->
+		</div>
+	</section>
+<!--End of Layout Hero Section-->
+<!--Start of About Section-->
+<section id="about">
+	<div class="container">
+		<h2 class="section_heading" data-outline="About" >About </h2>
+		<div class="wrapper">
+			<div class="left">
+				<div class="card">
+				<div class="img">
+					<img src="profilephoto.png" alt="image">
+				</div>
+				<p class="card_description">Name: Tamang Sanjiv <br>Date of Birth: 17/08/1995<br>University Id: 21422144 </p>
+				<h3 class="card_name">NAMI COLLEGE</h3>
+				<p class="card_subtitle">B.Sc. Computing (1st year)</p>
+				</div>
+			</div>
+				<div class="right">
+					<p class="subheading">Hi!, This is SANJIV</p>
+					<h2 class="slogan"> Programmer </h2>
+					<p class="right_text">Hi! My name is Sanjiv Tamang. I am a computing student in NAMI college. My course is specialized in software development where I have to use various programming languages.</p>
+					<div class="button">
+						<a href="./cv.docx" class="primary_button" download>Download CV</a>
+					</div>
+				</div>
+		</div>
+	</div>
 
-
-
-
-	
-
-	
-
-	
-	
-	
+</section>
+<!--Footer section -->
+<section id="footer">
+	<div class="container">
+		<footer>
+			<div class="column_1">
+				<div class="logo">
+					<a href="#">
+						<img src="logosignature.png" alt="logo">
+					</a>
+				</div>
+				<p>
+					This is an official logo or signature stamp of this page.Any violation against this page will be strictly prohibited.
+				</p>
+			</div>
+			<div class="column_2">
+				<h2 class="column_heading">Important <br> Links</h2>
+				<ul>
+					<li><a href="#homepage_hero">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#contact">Contact Me</a></li>
+				</ul>
+			</div>
+			<div class="column_3">
+				<h2 class="column_heading">Contact <br> Info</h2>
+				<ul>
+					<li><a href="mailto:tamangsanjiv2015@gmail.com">tamangsanjiv2015@gmail.com</a></li>
+					<li><a href="#about">+977-9848461400</a></li>
+					<li><a href="#contact">Kathmandu,Nepal</a></li>
+				</ul>
+			</div>
+			<div class="column_4">
+				<h2 class="column_heading">Social<br>Links</h2>
+				<ul>
+					<li><a href="https://www.facebook.com/profile.php?id=100003364999811">Facebook</a></li>
+					<li><a href="#">Twitter</a></li>
+					<li><a href="https://www.youtube.com/">Youtube</a></li>
+				</ul>
+			</div>
+		</footer>
+	</div>
+</section>
+<section id="copyright">
+	<div class="container">
+		<p>© Copyright 2021 sanjiv tamang, All Rights Reserved. This page is  registered under the name of sanjiv tamang from Kathmandu,Nepal. </p>
+	</div>
+</section>
 </body>
 </html>
