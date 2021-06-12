@@ -1,7 +1,7 @@
-const hamburgermMenu = document.querySelector ('#navigation .nav_icon');
-const navContent = document.querySelector('#nav_content');
-const closeNavButton = document.querySelector('#nav_content .close_button');
-const navLinks = document.querySelectorAll('#nav_content nav ul li a');
+const hamburgermMenu = document.querySelector ('#nav_icon_section .nav_icon');
+const navContent = document.querySelector('#nav_content_section');
+const closeNavButton = document.querySelector('#nav_content_section .close_button');
+const navLinks = document.querySelectorAll('#nav_content_section nav ul li a');
 
 
 
